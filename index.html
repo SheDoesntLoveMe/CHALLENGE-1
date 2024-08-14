@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de texto challenge 1</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <header class="header">
+      <img class="logo" src="IMAGENES/logo.png" alt="Logo alura" />
+    </header>
+
+    <main class="main">
+
+      <section class="section1">
+      <textarea id="user-input" placeholder="Ingrese el texto aqui" maxlength="300" class="textArea" ></textarea>
+            
+        <div class="div2">
+              <div class="information">
+                <img class="signo" src="IMAGENES/advertencia.png" alt="logo de exclamacion" />
+                <p class="parrafo1">Solo letras minusculas y sin acentos</p>
+              </div>
+
+            <div class="botones">
+            <button class="btn boton1" onclick="btnBoton1()">Encriptar</button>
+            <button class="btn boton2" onclick="btnBoton2()">Desencriptar</button>
+            </div>
+        </div>
+
+      </section>    
+
+      <section class="section2">
+        <div class="wrapperMessages">
+            <div class="div_parrafo">
+              <p class="mensajes" cols="20"rows="10" maxlength="500"></p>
+                <h1 id="ng" class="desencriptar_mensaje">Ningún mensaje fue encontrado</h1>
+                <p id="ig" class="desencriptar_mensaje_parrafo">
+                Ingresa el texto que desees encriptar o desencriptar
+                </p>
+                <button class="btn copiar"onclick="copiarTexto()">Copiar</button>
+            </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p>Desarrollado por BRYAN ALVARADO</p>
+    </footer>
+  <script src="script.js"></script>
+  </body>
+
+</html>
